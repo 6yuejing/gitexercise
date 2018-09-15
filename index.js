@@ -1,6 +1,6 @@
 var express=require('express');
 var app=express();
-//设置跨域访问
+//设置跨域访问,改动一
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -37,3 +37,4 @@ var server = app.listen(3000, function () {
  
     console.log('Example app listening at http://%s:%s', host, port);
 })
+// 改动二
